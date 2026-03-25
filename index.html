@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ── SEO ─────────────────────────────────────────────────── -->
+  <title>Splash Food Suresnes — Fast-food Halal · Kebab Tacos Burger 92150</title>
+  <meta name="description" content="Restaurant halal à Suresnes (92150) — kebabs, tacos, burgers maison. Ouvert 7j/7 jusqu'à minuit. Commande sur place, à emporter ou via Uber Eats.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="author" content="Splash Food">
+
+  <!-- ── Open Graph ─────────────────────────────────────────── -->
+  <meta property="og:title"       content="Splash Food — Fast-food Halal Suresnes">
+  <meta property="og:description" content="Kebabs, tacos, burgers maison. Halal certifié. Ouvert 7j/7.">
+  <meta property="og:type"        content="restaurant">
+  <meta property="og:locale"      content="fr_FR">
+
+  <!-- ── Fonts (Space Grotesk — kinetic, brutalist, street) ─── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- ── Schema.org JSON-LD ────────────────────────────────── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Splash Food",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "20 Rue des Bourets",
+      "addressLocality": "Suresnes",
+      "postalCode": "92150",
+      "addressCountry": "FR"
+    },
+    "telephone": "+33142041871",
+    "email": "spash2food@gmail.com",
+    "servesCuisine": ["Halal", "Fast Food", "Kebab", "Tacos", "Pizza"],
+    "priceRange": "€€",
+    "openingHours": [
+      "Mo-Th 11:00-00:00",
+      "Fr 11:00-13:30",
+      "Fr 15:00-00:00",
+      "Sa-Su 11:00-00:00"
+    ],
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.4",
+      "reviewCount": "1000"
+    }
+  }
+  </script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════════
+       HEADER — Navigation sticky
+  ══════════════════════════════════════════════════════════ -->
+  <header id="header">
+    <div class="nav-container">
+
+      <!-- Logo -->
+      <a href="#hero" class="logo">Splash<em>Food</em></a>
+
+      <!-- Desktop nav -->
+      <ul class="nav-links" role="navigation" aria-label="Navigation principale">
+        <li><a href="#menu"      data-nav>Menu</a></li>
+        <li><a href="#avis"      data-nav>Avis</a></li>
+        <li><a href="#acces"     data-nav>Accès</a></li>
+        <li>
+          <!-- Remplacer le href par l'URL Uber Eats du restaurant -->
+          <a href="https://www.ubereats.com"
+             class="btn btn-primary btn-sm"
+             target="_blank"
+             rel="noopener noreferrer">
+            Commander
+          </a>
+        </li>
+      </ul>
+
+      <!-- Hamburger (mobile) -->
+      <button class="hamburger" id="hamburger"
+              aria-label="Ouvrir le menu"
+              aria-expanded="false"
+              aria-controls="nav-mobile">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+
+    <!-- Mobile nav -->
+    <nav class="nav-mobile" id="nav-mobile" aria-label="Navigation mobile">
+      <a href="#menu"  data-nav-mobile>Menu</a>
+      <a href="#avis"  data-nav-mobile>Avis</a>
+      <a href="#acces" data-nav-mobile>Accès</a>
+      <!-- Remplacer le href par l'URL Uber Eats du restaurant -->
+      <a href="https://www.ubereats.com"
+         class="btn btn-primary"
+         target="_blank"
+         rel="noopener noreferrer">
+        Commander sur Uber Eats
+      </a>
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- ══════════════════════════════════════════════════════════
+         HERO — Accroche + CTA principal
+    ══════════════════════════════════════════════════════════ -->
+    <section id="hero" class="section-hero">
+
+      <div class="hero-glow-top"    aria-hidden="true"></div>
+      <div class="hero-glow-bottom" aria-hidden="true"></div>
+
+      <div class="hero-content">
+
+        <!-- Texte -->
+        <div class="hero-text">
+
+          <div class="hero-badge">
+            <span class="badge-pulse" aria-hidden="true"></span>
+            Halal certifié &nbsp;·&nbsp; Suresnes 92150
+          </div>
+
+          <h1 class="hero-title">
+            Splash<br>
+            <span class="accent">Food</span>
+          </h1>
+
+          <p class="hero-subtitle">
+            Kebabs, tacos, burgers, pizzas — faits maison,
+            halal certifié. Sur place, à emporter ou livré à ta porte.
+          </p>
+
+          <div class="hero-ctas">
+            <!-- Remplacer le href par l'URL Uber Eats du restaurant -->
+            <a href="https://www.ubereats.com"
+               class="btn btn-primary btn-lg"
+               target="_blank"
+               rel="noopener noreferrer">
+              Commander sur Uber Eats
+            </a>
+            <a href="#menu" class="btn btn-ghost-white btn-lg">
+              Voir le menu
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-value">4.4/5</span>
+              <span class="stat-label">Note Google</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-value">1000+</span>
+              <span class="stat-label">Avis clients</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <span class="stat-value">7j/7</span>
+              <span class="stat-label">Jusqu'à minuit</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Visuel hero — kebab 3D flottant -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="hero-food-wrap">
+            <div class="hero-food-glow"></div>
+            <div class="plate-ring plate-ring-1"></div>
+            <div class="plate-ring plate-ring-2"></div>
+            <img src="images/nourriture-removebg-preview.png"
+                 alt="Kebab, burger, tacos, pizza — Splash Food"
+                 class="hero-food-img">
+            <div class="plate-chip chip-halal">✓ Halal certifié</div>
+            <div class="plate-chip chip-rating">⭐ 4.4 / 5</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="hero-scroll" aria-hidden="true">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════════════════
+         AVANTAGES — 4 arguments clés
+    ══════════════════════════════════════════════════════════ -->
+    <section id="avantages" class="section-avantages">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-badge">Pourquoi Splash Food ?</span>
+          <h2 class="section-title">Ce qui fait la différence</h2>
+          <p class="section-subtitle">
+            Fast-food halal de quartier, sans compromis sur la qualité.
+          </p>
+        </div>
+
+        <div class="avantages-grid">
+
+          <div class="avantage-card fade-up d1">
+            <span class="avantage-icon" aria-hidden="true">
+              <!-- Lightning bolt — rapidité -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </span>
+            <h3 class="avantage-title">Fait maison.<br>Fait vite.</h3>
+            <p class="avantage-desc">
+              Préparées chaque jour sur place, tes commandes sont prêtes
+              en quelques minutes. Zéro surgelé, zéro compromis.
+            </p>
+          </div>
+
+          <div class="avantage-card fade-up d2">
+            <span class="avantage-icon" aria-hidden="true">
+              <!-- Checkmark circle — halal certifié -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </span>
+            <h3 class="avantage-title">Halal certifié.<br>Confiance.</h3>
+            <p class="avantage-desc">
+              Chaque produit est halal. Viandes sélectionnées,
+              préparation respectueuse. On ne blague pas avec ça.
+            </p>
+          </div>
+
+          <div class="avantage-card fade-up d3">
+            <span class="avantage-icon" aria-hidden="true">
+              <!-- Map pin — localisation -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </span>
+            <h3 class="avantage-title">À Suresnes.<br>Près de toi.</h3>
+            <p class="avantage-desc">
+              20 Rue des Bourets, à 5 min à pied.
+              Livré via Uber Eats. Ouvert jusqu'à minuit tous les jours.
+            </p>
+          </div>
+
+          <div class="avantage-card fade-up d4">
+            <span class="avantage-icon" aria-hidden="true">
+              <!-- Star — note Google -->
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </span>
+            <h3 class="avantage-title">4.4/5 — Aimé par<br>+1000 clients.</h3>
+            <p class="avantage-desc">
+              Plus de mille avis Google vérifiés.
+              Vraies personnes, vrais retours. Lis-les toi-même.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════════════════
+         MENU — Carousel horizontal avec photos
+    ══════════════════════════════════════════════════════════ -->
+    <section id="menu" class="section-menu">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-badge">Notre carte</span>
+          <h2 class="section-title">Les spécialités</h2>
+          <p class="section-subtitle">
+            Tout est préparé sur place avec des produits frais. Halal certifié.
+          </p>
+        </div>
+
+        <div class="menu-carousel-outer">
+
+          <!-- Bouton précédent -->
+          <button class="carousel-nav carousel-prev" id="menuPrev" aria-label="Précédent">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+
+          <div class="menu-carousel" id="menuCarousel">
+
+            <!-- Kebab -->
+            <article class="menu-card fade-up d1">
+              <div class="card-img img-kebab">
+                <img
+                  src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba?auto=format&fit=crop&w=600&h=400&q=80"
+                  onerror="this.style.display='none'"
+                  alt="Kebab Signature"
+                  loading="lazy">
+                <div class="card-img-emoji" aria-hidden="true">🥙</div>
+                <span class="card-badge">Incontournable</span>
+              </div>
+              <div class="card-body">
+                <h3 class="card-name">Kebab Signature</h3>
+                <p class="card-desc">
+                  Pain pita, viande marinée 24h, salade fraîche,
+                  sauce maison généreuse.
+                </p>
+                <div class="card-footer">
+                  <span class="card-price">dès 8<sup>€</sup></span>
+                  <!-- Remplacer le href par l'URL Uber Eats du restaurant -->
+                  <a href="https://www.ubereats.com"
+                     class="btn btn-orange-outline btn-sm"
+                     target="_blank"
+                     rel="noopener noreferrer">
+                    Commander
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Tacos -->
+            <article class="menu-card fade-up d2">
+              <div class="card-img img-tacos">
+                <!-- Photo tacos — remplacer src par la vraie photo -->
+                <img
+                  src="https://images.unsplash.com/photo-1552332386-f8dd00dc2f85?auto=format&fit=crop&w=600&h=400&q=80"
+                  onerror="this.style.display='none'"
+                  alt="Tacos Explosion"
+                  loading="lazy">
+                <div class="card-img-emoji" aria-hidden="true">🌮</div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-name">Tacos Explosion</h3>
+                <p class="card-desc">
+                  Tortillas moelleuses, viande grillée,
+                  cheddar fondu, sauce Splash.
+                </p>
+                <div class="card-footer">
+                  <span class="card-price">dès 7,50<sup>€</sup></span>
+                  <!-- Remplacer le href par l'URL Uber Eats du restaurant -->
+                  <a href="https://www.ubereats.com"
+                     class="btn btn-orange-outline btn-sm"
+                     target="_blank"
+                     rel="noopener noreferrer">
+                    Commander
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Burger -->
+            <article class="menu-card fade-up d3">
+              <div class="card-img img-burger">
+                <!-- Photo burger — remplacer src par la vraie photo -->
+                <img
+                  src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&h=400&q=80"
+                  onerror="this.style.display='none'"
+                  alt="Burger Carnivore"
+                  loading="lazy">
+                <div class="card-img-emoji" aria-hidden="true">🍔</div>
+                <span class="card-badge green">Populaire</span>
+              </div>
+              <div class="card-body">
+                <h3 class="card-name">Burger Carnivore</h3>
+                <p class="card-desc">
+                  Pain brioche grillé, steak haché 150g,
+                  fromage, tomate, sauce spéciale.
+                </p>
+                <div class="card-footer">
+                  <span class="card-price">dès 9,50<sup>€</sup></span>
+                  <!-- Remplacer le href par l'URL Uber Eats du restaurant -->
+                  <a href="https://www.ubereats.com"
+                     class="btn btn-orange-outline btn-sm"
+                     target="_blank"
+                     rel="noopener noreferrer">
+                    Commander
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Pizza -->
+            <article class="menu-card fade-up d1">
+              <div class="card-img img-pizza">
+                <!-- Photo pizza — remplacer src par la vraie photo -->
+                <img
+                  src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&h=400&q=80"
+                  onerror="this.style.display='none'"
+                  alt="Pizza Gourmande"
+                  loading="lazy">
+                <div class="card-img-emoji" aria-hidden="true">🍕</div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-name">Pizza Gourmande</h3>
+                <p class="card-desc">
+                  Base tomate maison, mozzarella,
+                  pepperoni halal, oignons rouges.
+                </p>
+                <div class="card-footer">
+                  <span class="card-price">dès 10<sup>€</sup></span>
+                  <!-- Remplacer le href par l'URL Uber Eats du restaurant -->
+                  <a href="https://www.ubereats.com"
+                     class="btn btn-orange-outline btn-sm"
+                     target="_blank"
+                     rel="noopener noreferrer">
+                    Commander
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Combo -->
+            <article class="menu-card fade-up d2">
+              <div class="card-img img-combo">
+                <!-- Photo combo — remplacer src par la vraie photo -->
+                <img
+                  src="https://images.unsplash.com/photo-1561758033-d89a9ad46330?auto=format&fit=crop&w=600&h=400&q=80"
+                  onerror="this.style.display='none'"
+                  alt="Combo Glouton"
+                  loading="lazy">
+                <div class="card-img-emoji" aria-hidden="true">🎉</div>
+                <span class="card-badge">Best Value</span>
+              </div>
+              <div class="card-body">
+                <h3 class="card-name">Combo Glouton</h3>
+                <p class="card-desc">
+                  Kebab + boisson + frite.
+                  La formule parfaite quand t'as vraiment faim.
+                </p>
+                <div class="card-footer">
+                  <span class="card-price">dès 12<sup>€</sup></span>
+                  <!-- Remplacer le href par l'URL Uber Eats du restaurant -->
+                  <a href="https://www.ubereats.com"
+                     class="btn btn-primary btn-sm"
+                     target="_blank"
+                     rel="noopener noreferrer">
+                    Commander
+                  </a>
+                </div>
+              </div>
+            </article>
+
+          </div><!-- /menu-carousel -->
+
+          <!-- Bouton suivant -->
+          <button class="carousel-nav carousel-next" id="menuNext" aria-label="Suivant">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+
+        </div><!-- /menu-carousel-outer -->
+
+        <!-- Dots indicateurs -->
+        <div class="carousel-dots" id="carouselDots" aria-hidden="true">
+          <div class="carousel-dot active"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+          <div class="carousel-dot"></div>
+        </div>
+
+        <p class="menu-note">
+          * Prix indicatifs — peuvent varier selon les options choisies.
+          Commandez via Uber Eats pour le menu complet et à jour.
+        </p>
+
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════════════════
+         AVIS — Témoignages clients
+    ══════════════════════════════════════════════════════════ -->
+    <section id="avis" class="section-avis">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-badge ghost">Avis clients</span>
+          <h2 class="section-title light">Ce qu'en disent les clients</h2>
+          <p class="section-subtitle light">
+            Plus de 1000 avis sur Google. Voici quelques retours.
+          </p>
+        </div>
+
+        <!-- Note globale -->
+        <div class="avis-global fade-up">
+          <div class="avis-stars-row" aria-label="5 étoiles sur 5">
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+            <span class="star">★</span>
+          </div>
+          <span class="avis-score">4.4</span>
+          <div class="avis-count">
+            Note Google<br>1&nbsp;000+ avis vérifiés
+          </div>
+        </div>
+
+        <!-- Grille avis -->
+        <div class="avis-grid">
+
+          <div class="avis-card fade-up d1">
+            <div class="avis-card-stars" aria-label="5 étoiles">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <p class="avis-quote">
+              "Je commandais chez eux une fois par semaine. Vraiment bon,
+              les portions sont généreuses et la viande est de qualité. À recommander !"
+            </p>
+            <div class="avis-author">
+              <div class="avis-avatar av-orange" aria-hidden="true">SM</div>
+              <div>
+                <div class="author-name">Sarah M.</div>
+                <div class="author-city">Suresnes</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="avis-card fade-up d2">
+            <div class="avis-card-stars" aria-label="5 étoiles">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <p class="avis-quote">
+              "Rapidement préparé, toujours chaud à la livraison.
+              Les salades ne sont jamais oubliées — c'est du détail qu'on remarque."
+            </p>
+            <div class="avis-author">
+              <div class="avis-avatar av-green" aria-hidden="true">AL</div>
+              <div>
+                <div class="author-name">Ahmed L.</div>
+                <div class="author-city">Suresnes</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="avis-card fade-up d3">
+            <div class="avis-card-stars" aria-label="4 étoiles sur 5">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star star-empty">★</span>
+            </div>
+            <p class="avis-quote">
+              "Mes enfants adorent leurs tacos. On en a commandé au moins 20 fois.
+              Pas cher, bon, et livré vite. Parfait pour la famille."
+            </p>
+            <div class="avis-author">
+              <div class="avis-avatar av-purple" aria-hidden="true">FK</div>
+              <div>
+                <div class="author-name">Fatima K.</div>
+                <div class="author-city">Suresnes</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="avis-link-row">
+          <a href="https://www.google.com/maps/search/Splash+Food+Suresnes"
+             target="_blank"
+             rel="noopener noreferrer">
+            Lire tous les avis sur Google Maps →
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════════════════
+         ACCÈS & HORAIRES
+    ══════════════════════════════════════════════════════════ -->
+    <section id="acces" class="section-acces">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-badge green">Infos pratiques</span>
+          <h2 class="section-title">Nous trouver</h2>
+          <p class="section-subtitle">
+            Venez nous voir ou commandez à distance — on est là pour vous.
+          </p>
+        </div>
+
+        <div class="acces-grid">
+
+          <!-- Informations -->
+          <div class="info-card fade-up d1">
+
+            <div class="info-row">
+              <span class="info-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              <div>
+                <div class="info-label">Adresse</div>
+                <div class="info-value">
+                  20 Rue des Bourets<br>
+                  92150 Suresnes, France
+                </div>
+              </div>
+            </div>
+
+            <div class="info-row">
+              <span class="info-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 13c-.73-2.3-.75-4.8-.07-7.1A2 2 0 0 1 6.77 4h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L11.09 11a16 16 0 0 0 5.91 5.91l.98-.9a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </span>
+              <div>
+                <div class="info-label">Téléphone</div>
+                <div class="info-value">
+                  <a href="tel:+33142041871">01 42 04 18 71</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-row">
+              <span class="info-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </span>
+              <div>
+                <div class="info-label">Email</div>
+                <div class="info-value">
+                  <a href="mailto:spash2food@gmail.com">spash2food@gmail.com</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="info-row">
+              <span class="info-icon" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              </span>
+              <div>
+                <div class="info-label">Horaires d'ouverture</div>
+                <div class="info-value">
+                  <div class="horaires-table">
+                    <div class="horaire-row">
+                      <span class="h-jour">Lundi – Jeudi</span>
+                      <span class="h-heure">11h00 – 00h00</span>
+                    </div>
+                    <div class="horaire-row" style="align-items:flex-start; flex-direction:column; gap:4px; padding: 4px 0;">
+                      <span class="h-jour" style="font-weight:600; color:var(--clr-text);">Vendredi</span>
+                      <div class="horaire-vendredi">
+                        <span class="h-heure-sub">11h00 – 13h30</span>
+                        <span class="h-heure-sub">15h00 – 00h00</span>
+                      </div>
+                    </div>
+                    <div class="horaire-row">
+                      <span class="h-jour">Samedi – Dimanche</span>
+                      <span class="h-heure">11h00 – 00h00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Google Maps embed -->
+          <div class="map-embed-wrap fade-up d2">
+            <iframe
+              src="https://maps.google.com/maps?q=20+Rue+des+Bourets,+Suresnes+92150,+France&output=embed&z=17"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Splash Food — 20 Rue des Bourets, Suresnes 92150"
+            ></iframe>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════════════════════
+         CTA FINAL — Commander
+    ══════════════════════════════════════════════════════════ -->
+    <section id="commander" class="section-commander">
+      <div class="container">
+
+        <div class="cmd-label fade-up">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          Ouvert jusqu'à minuit · 7j/7
+        </div>
+
+        <h2 class="cmd-title fade-up d1">
+          Prêt à<br>commander ?
+        </h2>
+
+        <p class="cmd-subtitle fade-up d2">
+          Livraison via Uber Eats ou appelle directement —
+          on est ouverts jusqu'à minuit tous les jours.
+        </p>
+
+        <div class="cmd-ctas fade-up d3">
+          <!-- Remplacer le href par l'URL Uber Eats du restaurant -->
+          <a href="https://www.ubereats.com"
+             class="btn btn-primary btn-lg"
+             target="_blank"
+             rel="noopener noreferrer">
+            Commander sur Uber Eats
+          </a>
+          <a href="tel:+33142041871" class="btn btn-green btn-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="width:18px;height:18px;flex-shrink:0"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.99 13c-.73-2.3-.75-4.8-.07-7.1A2 2 0 0 1 6.77 4h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L11.09 11a16 16 0 0 0 5.91 5.91l.98-.9a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            01 42 04 18 71
+          </a>
+        </div>
+
+        <p class="cmd-hours fade-up d4">
+          Lun–Jeu &nbsp;·&nbsp; Sam–Dim : 11h – 00h
+          &nbsp;·&nbsp;
+          Vendredi : 11h–13h30 &amp; 15h–00h
+        </p>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- ══════════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+
+        <a href="#hero" class="footer-logo">Splash<em>Food</em></a>
+
+        <div class="footer-info">
+          20 Rue des Bourets · 92150 Suresnes ·
+          <a href="tel:+33142041871">01 42 04 18 71</a><br>
+          © 2026 Splash Food · Fast-food halal · Démo non-indexée
+        </div>
+
+        <div class="footer-credit">
+          Démo réalisée par Elyès<br>
+          Freelance Web Designer
+        </div>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
